@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/betobeto-san",
     "maintainers": [
       {
@@ -16,111 +16,238 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "betobeto-san",
-    "name": "Betobeto-san (べとべとさん)",
-    "aliases": [],
-    "category": "ENTITY",
-    "subcategory": "Unknown",
+    "name": "Betobeto-san",
+    "aliases": [
+      { "name": "べとべとさん", "language": "Japanese", "meaning": "'Mr. Sticky-footsteps' — onomatopoeic for the sound of sandals on a road" },
+      { "name": "Bishakutsu", "language": "Japanese", "region": "Fukui Prefecture", "meaning": "Closely related invisible footstep yōkai" }
+    ],
+    "category": "ENTITY_SPIRIT",
+    "subcategory": "Auditory yōkai (footstep follower)",
     "tags": [
-      "folklore",
-      "mythology"
+      "yokai",
+      "japanese-folklore",
+      "footsteps",
+      "nocturnal",
+      "harmless",
+      "auditory"
     ],
     "status": "documented",
     "description": {
-      "summary": "Betobeto-san is a harmless but eerie yōkai from Japanese folklore known primarily through sound rather than sight.",
-      "full": "Betobeto-san is a harmless but eerie yōkai from Japanese folklore known primarily through sound rather than sight. The name is onomatopoetic, representing the sound of wooden geta (traditional Japanese sandals) clacking on pavement—\\\"beto-beto\\\" or \\\"beta-beta.\\\" This yōkai manifests as invisible footsteps that follow solitary travelers on dark roads at night, matching their pace exactly. While the constant footsteps behind can be deeply unnerving, Betobeto-san causes no physical harm and will politely depart if acknowledged correctly. The yōkai embodies the anxiety of being followed in darkness and represents Japan's rich tradition of auditory supernatural phenomena."
+      "summary": "An invisible Japanese yōkai known only by its sound: the patter of straight-following geta (wooden sandal) footsteps that walks behind people on lonely night roads. Harmless, and easily dismissed by stepping aside and politely inviting it to pass.",
+      "full": "Betobeto-san (べとべとさん) is a Japanese yōkai of the auditory kind — known not by appearance but by the sound of footsteps following a traveller on a quiet night road. The name imitates the 'beto-beto' sound of sandals slapping the ground. The creature is invisible, never harms anyone, and is reported chiefly from Uda-gun in Nara Prefecture and from Shizuoka Prefecture, with related auditory yōkai (Bishakutsu) recorded in Fukui Prefecture. The folkloric remedy is to stop, step aside on the road, and politely say something like 'Betobeto-san, please go ahead' (Betobeto-san, osaki ni okoshi); the footsteps then continue on without you. Betobeto-san is one of the best-known minor yōkai in Japanese folklore compendiums and is most familiar to modern audiences through manga artist Shigeru Mizuki, who included it in his GeGeGe no Kitarō works."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese onomatopoeia: 'beto-beto' (べとべと) imitating the sound of footsteps, with the honorific suffix -san. The yōkai is identified by sound rather than form.",
+      "meaning": "Roughly 'Mr. Sticky-Steps' or 'Mr. Patter-Patter' — named for its distinctive footstep sound.",
+      "first_use": "Recorded in 20th-century Japanese folklore compendiums, including the Sōgō Nihon Minzoku Goi (Comprehensive Vocabulary of Japanese Folk Customs, 1955) and the Yōkai Jiten (Yōkai Encyclopedia) tradition."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "ENTITY",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "ENTITY_SPIRIT",
+      "type": "Yōkai",
+      "subtype": "Auditory / footstep yōkai",
+      "variant": "Nara / Shizuoka regional tradition"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "ashimagari", "name": "Ashimagari", "relationship": "similar", "description": "Invisible yōkai that wraps around legs at night" },
+      { "id": "teke-teke", "name": "Teke-teke", "relationship": "related", "description": "Modern urban-legend yōkai identified primarily by sound" },
+      { "id": "betobeto-bishakutsu", "name": "Bishakutsu", "relationship": "regional_variant", "description": "Footstep-following yōkai of Fukui Prefecture" },
+      { "id": "konaki-jiji", "name": "Konaki-jijī", "relationship": "related", "description": "Another Mizuki-popularised minor yōkai of road encounters" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": [],
+      "features": [
+        { "feature": "Invisibility", "description": "Has no recorded visual form; encountered only as sound", "frequency": "always" },
+        { "feature": "Audible footsteps", "description": "Sound of geta-style sandals 'beto-beto' following directly behind a walker on a quiet road", "frequency": "always" },
+        { "feature": "Strict path-following", "description": "Steps closely behind the walker, in the same rhythm; falls silent only when the walker stops and steps aside", "frequency": "common" }
+      ],
+      "morphology": "Formless; the modern visual depiction (Mizuki and successors) shows a small footed mouth, but pre-modern tradition gives it no body."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Auditory presence only", "description": "Manifests purely as sound; vanishes from earshot if politely asked to pass", "frequency": "always", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "passive",
+      "social_structure": "solitary",
+      "habitat_preference": ["Country roads", "Mountain paths", "Lonely night routes in rural Japan"],
+      "patterns": [
+        "Encountered alone at night",
+        "Departs when politely addressed",
+        "Never reported to harm humans"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Reports localised to rural Japan, particularly Uda-gun in Nara Prefecture and parts of Shizuoka Prefecture; related Bishakutsu reports in Fukui Prefecture.",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": [
+        "Nara Prefecture (Uda-gun)",
+        "Shizuoka Prefecture",
+        "Fukui Prefecture (related variant)"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Uda-gun",
+        "location": {
+          "description": "Uda district, Nara Prefecture",
+          "country": "Japan",
+          "region": "Nara Prefecture",
+          "coordinates": { "latitude": 34.53, "longitude": 135.95 }
+        },
+        "peak_period": "Pre-modern Japanese folklore",
+        "notes": "Locus classicus of Betobeto-san reports"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "20th century",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Japanese ethnographic folklore compendiums"
+      },
+      "peak_activity_periods": [
+        { "period": "Pre-modern", "description": "Rural night-road folklore tradition" },
+        { "period": "1955–present", "description": "Codified in Yanagita-school folklore reference works and re-popularised by Shigeru Mizuki's manga" }
+      ],
+      "seasonal_patterns": "Most often associated with autumn and winter nights, when people walked rural roads alone in the dark."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Japanese rural folklore tradition. The footstep-following yōkai is a recurrent motif in Japanese ethnography, alongside other invisible road-yōkai (ashimagari, betobeto-bishakutsu, dorotabō).",
+      "earliest_accounts": "Mid-20th-century compendiums (Sōgō Nihon Minzoku Goi, 1955) record the Nara tradition; the legend itself is plausibly older oral tradition.",
+      "folklore_connections": "Part of a wider Japanese 'yōkai of the road' family, which also includes nurikabe (the wall yōkai) and ittan-momen (the cloth yōkai)."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1955", "event": "Betobeto-san appears in the Sōgō Nihon Minzoku Goi (Comprehensive Vocabulary of Japanese Folk Customs)", "significance": "First major folkloristic reference work to record the yōkai", "source": "Yanagita Kunio (ed.), Sōgō Nihon Minzoku Goi" },
+      { "date": "1968", "event": "Shigeru Mizuki includes Betobeto-san in his GeGeGe no Kitarō universe", "significance": "Brings the yōkai into postwar pop culture", "source": "Mizuki Shigeru, GeGeGe no Kitarō manga" },
+      { "date": "1995", "event": "Murakami Kenji's Yōkai Jiten (Yōkai Encyclopedia) catalogues Betobeto-san with regional notes", "significance": "Modern reference compilation", "source": "Murakami Kenji, Yōkai Jiten (Mainichi Shimbunsha, 1995)" }
+    ],
+    "modern_era": "Betobeto-san is well known to modern Japanese audiences through Mizuki's manga and television adaptations, and through Yōkai-Watch- and Pokemon-era folkloric merchandise. A railway station in west Japan is colloquially nicknamed 'Betobeto-san Station' for its associations."
   },
+
   "sightings": {
     "statistics": {
-      "total_documented": 0,
-      "verified": 0,
-      "disputed": 0,
-      "debunked": 0
+      "date_range": { "earliest": "Pre-modern", "latest": "20th century compendiums" }
     },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "betobeto-san-evidence-yanagita-1955",
+        "type": "folklore reference",
+        "name": "Sōgō Nihon Minzoku Goi (1955)",
+        "description": "Japanese folklore compendium edited by Yanagita Kunio that records Betobeto-san among the yōkai of Nara Prefecture's Uda-gun.",
+        "status": "verified",
+        "analysis": "Standard mid-20th-century ethnographic source for many minor yōkai including Betobeto-san.",
+        "source": "Yanagita Kunio (ed.), Sōgō Nihon Minzoku Goi, 1955"
+      },
+      {
+        "id": "betobeto-san-evidence-murakami-1995",
+        "type": "folklore reference",
+        "name": "Yōkai Jiten (1995)",
+        "description": "Modern Japanese yōkai encyclopedia compiled by Murakami Kenji.",
+        "status": "verified",
+        "analysis": "Includes regional notes on Betobeto-san and the related Bishakutsu of Fukui.",
+        "source": "Murakami Kenji, Yōkai Jiten (Mainichi Shimbunsha, 1995)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "paranormal": [
+      {
+        "name": "Yōkai of the road",
+        "description": "Treated as one of a class of harmless but eerie auditory yōkai accompanying solitary walkers at night.",
+        "proponents": ["Yanagita Kunio (folklore tradition)", "Shigeru Mizuki"],
+        "evidence_cited": ["Recorded oral testimony in Nara and Shizuoka", "Cross-references to similar invisible footstep yōkai"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Auditory pareidolia and lone-walker psychology",
+        "description": "The phenomenon plausibly reflects ordinary auditory pareidolia: the human tendency to perceive familiar patterns (footsteps) in random ambient noise on a quiet road, especially when alone and apprehensive.",
+        "proponents": ["Folklorists (e.g. Komatsu Kazuhiko)"],
+        "evidence_cited": ["Cross-cultural prevalence of 'follower' folklore (e.g. boggart-style traditions)", "Standard auditory illusion research"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Folkloric explanation only",
+        "description": "Betobeto-san is universally treated as folklore; there is no claim that it is a flesh-and-blood entity to be debunked.",
+        "proponents": ["Mainstream Japanese folklore studies"],
+        "evidence_cited": ["No evidentiary tradition; the yōkai is a literary-folkloric figure"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Japanese yōkai-of-the-road tradition (Yanagita school)",
+        "Auditory yōkai cluster (with Bishakutsu, Ashimagari)"
+      ],
+      "stories": [
+        "Nara Uda-gun footstep tradition",
+        "Shizuoka night-road tradition"
+      ],
+      "beliefs": "Recognised as harmless; the practical 'remedy' (stepping aside and inviting it to pass) is itself part of the tradition and reflects the genteel character of much Japanese yōkai folklore."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Yōkai Daizukai — Shigeru Mizuki",
+        "Yōkai Jiten — Murakami Kenji (1995)"
+      ],
+      "film_tv": [
+        "GeGeGe no Kitarō (multiple anime adaptations)",
+        "Yōkai Watch (anime/game) — Mizuki-influenced re-imaginings"
+      ],
+      "games": [
+        "Yo-Kai Watch series (Level-5)"
+      ],
+      "music": [],
+      "other": [
+        "'Betobeto-san Station' nickname for a small West Japan rail stop"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Yanagita Kunio", "affiliation": "Founder of modern Japanese folklore studies", "contribution": "Ethnographic recording of yōkai including Betobeto-san", "period": "1910s–1962" },
+      { "name": "Shigeru Mizuki", "affiliation": "Manga artist; independent yōkai researcher", "contribution": "Popularisation of regional yōkai (including Betobeto-san) in postwar Japan", "period": "1960s–2015" },
+      { "name": "Murakami Kenji", "affiliation": "Independent folklore writer", "contribution": "Yōkai Jiten (1995) reference compilation", "period": "1990s–present" }
+    ],
+    "organizations": [
+      { "name": "International Research Center for Japanese Studies (Nichibunken)", "url": "https://www.nichibun.ac.jp", "focus": "Japanese folklore studies including yōkai databases" }
+    ],
+    "ongoing_studies": "Ongoing academic work on yōkai catalogues and digital databases (e.g. Nichibunken's Kaiji Yōkai Database) preserves and indexes regional accounts of Betobeto-san and related yōkai."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-betobeto-san", "type": "website", "title": "Betobeto-san", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Betobeto-san", "accessed": "2026-05-07" },
+    { "id": "yanagita-1955", "type": "book", "title": "Sōgō Nihon Minzoku Goi (Comprehensive Vocabulary of Japanese Folk Customs)", "authors": ["Yanagita Kunio (ed.)"], "publication": "Heibonsha", "date": "1955" },
+    { "id": "murakami-1995", "type": "book", "title": "Yōkai Jiten (Yōkai Encyclopedia)", "authors": ["Murakami Kenji"], "publication": "Mainichi Shimbunsha", "date": "1995" }
+  ]
 }
